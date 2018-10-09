@@ -1,0 +1,83 @@
+---
+title: Contact
+layout: contact
+permalink: /contact.html
+---
+
+<!-- Main -->
+	<section class="wrapper style1 wrapper-custom-top-padding">
+		<div class="container">
+			<div id="content">
+
+				<!-- Content -->
+			
+					<article>
+						<header>
+							<h2 class="border-bottom">Contact Us</h2>							
+						</header>
+					</article>
+					<div class="row">
+						<span class="image featured custom-img-width"><img src="{{ site.baseurl }}/assets/images/contact.jpg" alt=""/></span>
+						
+						
+						<section class="7u -1u">							
+							<h3 class="custom-margin-bottom">Just Get In Touch</h3>
+							<form action="https://getsimpleform.com/messages?form_api_token=3178db6845b1194ec45710657f17b5a6" method="POST" role="form" enctype="multipart/formdata" id="frmContact">
+								<input type="hidden" id="source" name="source" value="Message from AllRisx">
+								<input type='hidden' name='redirect_to' value='https://fantastic-breeze.cloudvent.net/thanks.html' />
+								<div class="row half collapse-at-2">
+									<div class="6u">
+										<input type="text" name="_from" id="_from" maxlength="30" required placeholder="Name" pattern="[a-zA-Z0-9]+"/>
+									</div>
+									<div class="6u">
+										<input type="email" name="_replyTo" id="_replyTo" placeholder="Email" maxlength="50" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+									</div>
+								</div>
+								<div class="row half">
+									<div class="12u">
+										<input type="text" id="_subject" name="_subject" maxlength="100" placeholder="Subject" required>
+									</div>
+								</div>
+								<div class="row half">
+									<div class="12u">
+										<textarea name="message" id="message" placeholder="Message" rows="5" maxlength="500" minlength="1" required></textarea>
+									</div>
+								</div>
+								<div class="row half">
+									<div class="12u">
+										<div class="g-recaptcha" data-callback="enableBtn" data-sitekey="6LdBoGMUAAAAAJ-5lI5-QQZ2js1eznRFK_NYCFR7" style="float:left; overflow-y: hidden;"></div>
+									</div>
+								</div>
+								<div class="row half">
+									<div class="12u">
+										<ul class="actions">
+											<li>
+												<input type="submit" class="button alt" value="Send Message" id="btnSubmitForm"/>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+						<section class="4u">
+							<h3 class="custom-margin-bottom">Our Address</h3>
+							<p>
+								Address Line#1<br>
+								Address Line#2<br>
+								Address Line#3<br>
+							</p>
+						</section>
+					</div>
+		
+			</div>
+		</div>
+	</section>	
+<script type="text/javascript">
+	$(document).ready(function(){
+		document.getElementById("btnSubmitForm").disabled = true;
+	});
+
+	var enableBtn = function(response) {
+	    document.getElementById("btnSubmitForm").disabled = false;
+	};
+</script>	

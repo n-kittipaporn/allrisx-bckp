@@ -1,0 +1,246 @@
+#menu of Products
+prods:
+  - link: ind-fam.html
+    text: for Individuals/Families
+  - link: businesses-corporations.html
+    text: for Businesses/Corporations
+  - link: agencies-brokers.html
+    text: for Agencies/Brokers
+  - link: insurance-companies.html
+    text: for Insurance Companies
+
+
+#menu of Features
+#icon is for slide on index
+feats:
+  - link: partner-management.html
+    text: Partner Management
+    icon: fas fa-bullhorn
+  - link: project-management.html
+    text: Project Management
+    icon: fas fa-briefcase
+  - link: policy-management.html
+    text: Policy Management
+    icon: fas fa-check
+  - link: claim-management.html
+    text: Claim Management
+    icon: fas fa-cog
+  - link: document-management.html
+    text: Document Management
+    icon: fas fa-clipboard
+  - link: task-management.html
+    text: Task Management
+    icon: fas fa-columns
+  - link: commission-management.html
+    text: Commission Management
+    icon: fas fa-donate
+  - link: multilevel-marketing.html
+    text: Multilevel Marketing
+    icon: fas fa-chart-line
+  - link: quote-calculators.html
+    text: Quote Calculators
+    icon: fas fa-calculator
+  - link: premium-comparisons.html
+    text: Premium comparisons
+    icon: fas fa-chart-bar
+  - link: custom-forms-system.html
+    text: Custom Forms System
+    icon: fas fa-briefcase
+  - link: workflow-integration.html
+    text: Workflow Integration
+    icon: fas fa-code-branch
+  - link: ms-azure-integration.html
+    text: MS Azure Integration
+    icon: fas fa-cloud
+  - link: office-365-integration.html
+    text: Office 365 Integration
+    icon: fas fa-file-code
+  - link: chat-integrations.html
+    text: Chat Integrations
+    icon: fas fa-comment
+  - link: configurable-notifications.html
+    text: Configurable Notifications
+    icon: fas fa-bell
+  - link: integration-platforms-support.html
+    text: Integration platforms support
+    icon: fas fa-code
+  - link: transactional-email-support.html
+    text: Transactional EMail support
+    icon: far fa-envelope-open
+  - link: email-pdf-chat-templates.html
+    text: EMail-,PDF-,Chat-Templates
+    icon: fas fa-briefcase
+  - link: custom-reporting.html
+    text: Custom Reporting
+    icon: fas fa-check
+  - link: custom-branding.html
+    text: Custom Branding
+    icon: fas fa-bookmark
+  - link: multi-tenancy-support.html
+    text: Multi Tenancy support
+    icon: fas fa-cogs
+  - link: browser-desktop-mobile-apps.html
+    text: Browser-,Desktop-,Mobile-Apps
+    icon: fas fa-laptop
+  - link: offline-capabilities.html
+    text: Offline capabilities
+    icon: fas fa-power-off
+  - link: blockchain-support.html
+    text: BlockChain support
+    icon: fab fa-bitcoin
+  - link: rest-apis-and-rest-hooks.html
+    text: REST-APIs and REST-Hooks
+    icon: fas fa-anchor
+  - link: scalability-and-availability.html
+    text: Scalability and Availability
+    icon: fas fa-arrows-alt
+  - link: artificial-intelligence.html
+    text: Artificial Intelligence
+    icon: fab fa-connectdevelop
+  - link: internet-of-things.html
+    text: Internet of Things
+    icon: fas fa-universal-access
+  - link: security-and-compliance.html
+    text: Security and Compliance
+    icon: fas fa-bomb
+  - link: facebook-integration.html
+    text: Facebook Integration
+    icon: fab fa-facebook-f
+  - link: linkedin-integration.html
+    text: LinkedIn Integration
+    icon: fab fa-linkedin
+  - link: powerapps-integration.html
+    text: PowerApps Integration
+    icon: far fa-file-powerpoint
+  - link: msflow-integration.html
+    text: Microsoft Flow Integration
+    icon: fas fa-project-diagram
+
+#menu of Technologies
+technos:
+  - link: accounting-integrations.html
+    text: Accounting Integrations
+  - link: artificial-intelligence.html
+    text: Artificial Intelligence
+  - link: blue-green-deployments.html
+    text: Blue / Green Deployments
+  - link: bpmn-process-documentation.html
+    text: BPMN Process Documentation
+  - link: browser-desktop-mobile-apps.html
+    text: Browser-Desktop-Mobile-Apps
+  - link: chatbots-integration.html
+    text: Chat Integrations
+  - link: chat-integrations.html
+    text: Chatbots integration
+  - link: computer-telephone-integration.html
+    text: Computer/Telephone Integration
+  - link: conference-system-integration.html
+    text: Conference System Integration
+  - link: configurable-notifications.html
+    text: Configurable Notifications
+  - link: content-delivery-network-support.html
+    text: Content Delivery Network Support
+  - link: crm-integrations.html
+    text: CRM Integrations
+  - link: custom-branding.html
+    text: Custom Branding
+  - link: custom-deployments.html
+    text: Custom Deployments
+  - link: custom-developments.html
+    text: Custom Developments
+  - link: custom-extensions.html
+    text: Custom Extensions
+  - link: custom-forms-system.html
+    text: Custom Forms System
+  - link: custom-reporting.html
+    text: Custom Reporting
+  - link: data-warehouse-integrations.html
+    text: DataWarehouse Integrations
+  - link: dedicated-cloud-connections.html
+    text: Dedicated Cloud Connections
+  - link: desktop-documents-sync.html
+    text: Desktop Documents Sync
+  - link: dynamic-online-help-system.html
+    text: Dynamic Online Help System
+  - link: early-prototyping-functions.html
+    text: Early Prototyping Functions
+  - link: elearning-integration.html
+    text: E-Learning Integration
+  - link: email-pdf-chat-templates.html
+    text: EMail-PDF-Chat-Templates
+  - link: excel-calculations-integration.html
+    text: Excel Calculations Integration
+  - link: feature-switches.html
+    text: Feature Switches
+  - link: feedback-support-system.html
+    text: Feedback & Support System
+  - link: git-based-code-pipelines.html
+    text: GIT based Code Pipelines
+  - link: gremlin-graph-api-support.html
+    text: Gremlin / Graph API Support
+  - link: hybrid-apps-near-native.html
+    text: Hybrid Apps - near native
+  - link: integration-platforms-support.html
+    text: Integration platforms support
+  - link: iotsinternet of -things.html
+    text: Internet of Things
+  - link: maps-and-navigation-integration.html
+    text: Maps and Navigation Integration
+  - link: mobile-contacts-sync.html
+    text: Mobile Contacts Sync
+  - link: mobile-device-features-support.html
+    text: Mobile Device Features support
+  - link: mobile-documents-sync.html
+    text: Mobile Documents Sync
+  - link: mobile-tasks-sync.html
+    text: Mobile Tasks Sync
+  - link: ms-azure-integration.html
+    text: MS Azure Integration
+  - link: multi-language-support.html
+    text: MultiLanguage Support
+  - link: multi-tenancy-support.html
+    text: Multi Tenancy support 
+  - link: nosql-json-database.html
+    text: NoSQL JSON Database
+  - link: office-365-integration.html
+    text: Office 365 Integration
+  - link: offline capabilities.html
+    text: Offline capabilities
+  - link: online-translation-support.html
+    text: Online Translation Support
+  - link: on-premise-caching-support.html
+    text: On-premise Caching Support
+  - link: platform-as-code-deployment.html
+    text: Platform as Code Deployment
+  - link: questionaire-mode.html
+    text: Questionaire mode
+  - link: realtime-notifications.html
+    text: Realtime notifications
+  - link: regional-settings-support.html
+    text: Regional Settings Support
+  - link: responsive-design.html
+    text: Responsive Design
+  - link: rest-apis-and-rest-hooks.html
+    text: REST-APIs and REST-Hooks
+  - link: scalability-and-availability.html
+    text: Scalability and Availability
+  - link: security-and-compliance.html
+    text: Security and Compliance
+  - link: serverless-paas-architecure.html
+    text: Serverless PaaS Architecure
+  - link: social-identity-providers.html
+    text: Social Identity Providers
+  - link: themes-support.html
+    text: Themes Support
+  - link: transactional-emai-support.html
+    text: Transactional EMail support
+  - link: walkthrough-support.html
+    text: Walkthrough support
+  - link: webshop-integrations.html
+    text: WebShop Integrations
+  - link: website-integrations.html
+    text: Website Integrations 
+  - link: workflow-integration.html
+    text: Workflow Integration
+  - link: customization-extensibility.html
+    text: Customization+Extensibility

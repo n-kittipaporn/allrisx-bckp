@@ -1,0 +1,282 @@
+---
+title: slider
+layout: 
+permalink: /features-slider.html
+---
+<!-- Friday 11.00 -->
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>AllRisX - {{ page.title }}</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="{{ site.baseurl }}/assets/js/jquery-3.1.1.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
+		
+		
+		<noscript>			
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
+		</noscript>			
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slide/slick.css" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slide/slick-theme.css" />
+		
+	</head>	
+	<body>
+
+		<!-- Header -->
+		<div id="header">
+					
+			<!-- Logo -->
+				<h1><a href="{{ site.baseurl }}/" id="logo">						
+					<img  id="allrisx-logo" src="{{ site.baseurl }}/assets/images/AllRisx-edit-yellowX.png"/>
+			    </a></h1>
+			
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						{% assign current = page.url | downcase | split: '/' %}
+						<li {% if page.title == "AllRisX" %}class="current"{% endif %}>
+							<a href="{{"/" | prepend: site.baseurl }}">Home</a>
+						</li>
+
+						<li {% if page.categories == "Products" %}class="current"{% endif %}>
+							<a href="">Products</a>
+							<ul>
+								{% for prod in site.data.navigation.prods %}
+								<li>
+									<a href="{{"/products/" | prepend: site.baseurl }}{{ prod.link }}">
+									{{ prod.text }}</a>
+								</li>										    
+								{% endfor %}
+																
+							</ul>
+						</li>
+
+						<li {% if page.categories == "Features" %}class="current"{% endif %}>
+							<a href="">Features</a>
+							<ul class="two-columns">
+								{% for feat in site.data.navigation.feats %}
+								<li>
+									<a href="{{"/features/" | prepend: site.baseurl }}{{ feat.link }}">
+									{{ feat.text }}</a>
+								</li>										    
+								{% endfor %}
+							</ul>
+						</li>
+						<li {% if page.categories == "Technologies" %}class="current"{% endif %}>
+							<a href="">Technologies</a>
+							<ul class="three-columns">
+								{% for techno in site.data.navigation.technos %}
+								<li>
+									<a href="{{"/technologies/" | prepend: site.baseurl }}{{ techno.link }}">
+									{{ techno.text }}</a>
+								</li>										    
+								{% endfor %}									
+							</ul>
+
+						</li>
+						<li {% if current[1] == 'blog' %}class="current"{% endif %}>
+							<a href="{{ site.baseurl }}/blog/">Blog</a>
+						</li>
+						<li {% if page.title == "pricing" %}class="current"{% endif %}>
+							<a href="{{"/pricing.html" | prepend: site.baseurl }}">Pricing</a>
+						</li>
+						<li>
+							<a href="">SignUp</a>
+						</li>
+						<li {% if page.title == "signin" %}class="current"{% endif %}>
+							<a href="{{"/signin.html" | prepend: site.baseurl }}">SignIn</a>
+						</li>
+					</ul>
+				</nav>
+
+		</div>	
+
+
+			<!-- Banner -->
+		<section id="banner">
+			<header>
+				<span id="spanOnBanner1" style="margin-right: 1em;">
+					<h2 id="headerOnMainBanner1">Get a free account !</h2>
+					<a href="#" class="button" id="linkOnMainBanner1">SignUp</a>
+				</span>
+				<span id="spanOnBanner2">			
+					<h2 id="headerOnMainBanner2">Have an account already ?</h2>
+					<a href="{{"/signin.html" | prepend: site.baseurl }}" class="button" id="linkOnMainBanner2">SignIn</a>
+				</span>
+			</header>
+		</section>
+
+
+		<!-- Highlights slide text-->
+		<section class="wrapper style1 wrapper-slide">
+			<div class="container slide-container" id="slideContainer">
+				<div class="row">
+					<div class="12u">				
+						<div id="bxslider">
+							{%  for feat in site.data.navigation.feats %}
+							{%	assign heading = feat.text	%}
+							{%	assign href = feat.link | prepend: '/features/' %}
+							{%	assign icon = feat.icon %}
+							
+							<section class="4u">
+								<div class="box highlight slide-highlight narrower-remove-padding-left">
+									<a href="{{ href }}" target="_blank"><i class="icon major {{ icon }}"></i></a>
+									<h3 class="slide-text">
+										<a href="{{ href }}" target="_blank">{{ heading }}</a>
+									</h3>															
+								</div>
+							</section>
+							
+							{% endfor %}
+						</div>		
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Gigantic Heading -->
+		<section class="wrapper style2">
+			<div class="container">
+				<header class="major">
+					<h2>InsureTech enabled.</h2>
+					<p>For all partners in the insurance industry...</p>
+				</header>
+			</div>
+		</section>
+
+		<!-- Posts -->
+		<section class="wrapper style1">
+			<div class="container">
+				<div class="row">
+					<section class="6u">
+						<div class="box post">
+							<a href="#" class="image left"><img src="{{ site.baseurl }}/assets/images/products/individuals.jpg" alt="" /></a>
+							<div class="inner">
+								<h3 class="custom-margin-bottom">Individuals</h3>
+								<p>Use AllRisX for yourself, your family and friends. Get the best quotes available and start to earn money by using AllRisX !<br><a href="{{"/products/ind-fam.html" | prepend: site.baseurl }} ">More info...</a></p>
+							</div>
+						</div>
+					</section>
+					<section class="6u">
+						<div class="box post">
+							<a href="#" class="image left"><img src="{{ site.baseurl }}/assets/images/products/corporations.jpg" alt="" /></a>
+							<div class="inner">
+								<h3 class="custom-margin-bottom">Corporations</h3>
+								<p>Keep an eye on all your risks and insurance solutions and cooperate with brokers, agencies and insurance providers.<br><a href="{{"/products/businesses-corporations.html" | prepend: site.baseurl }} ">More info...</a></p>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="row">
+					<section class="6u">
+						<div class="box post">
+							<a href="#" class="image left"><img src="{{ site.baseurl }}/assets/images/products/agencies-brokers.jpg" alt="" /></a>
+							<div class="inner">
+								<h3 class="custom-margin-bottom">Agencies and Brokers</h3>
+								<p>Find new clients, offer them a state of the art insurance portal, premium calculators and forms and keep track of all their insurance data.<br><a href="{{"/products/agencies-brokers.html" | prepend: site.baseurl }} ">More info...</a></p>
+							</div>
+						</div>
+					</section>
+					<section class="6u">
+						<div class="box post">
+							<a href="#" class="image left"><img src="{{ site.baseurl }}/assets/images/products/insure-comp.jpg" alt="" /></a>
+							<div class="inner">
+								<h3 class="custom-margin-bottom">Insurance Companies</h3>
+								<p>Provide quote calculators, deliver insurance data to your own sales staff or your agencies and brokers.<br><a href="{{"/products/insurance-companies.html" | prepend: site.baseurl }} ">More info...</a></p>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+	
+	<script src="{{ site.baseurl }}/assets/js/slide/slick.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('div#bxslider').slick({
+			  autoplay: true,			  
+			  slidesToShow: 3,
+			  slidesToScroll: 1,
+			  arrows: true,
+			  infinite: true,
+			  adaptiveHeight: true,
+			  speed: 300,
+			  responsive: [	
+				{
+			      breakpoint: 1024,
+			      settings: {
+			        autoplay: true,			  
+				  	slidesToShow: 3,
+				  	slidesToScroll: 1,
+				  	arrows: true,
+				  	infinite: true,
+			      }
+			    },
+			    {
+			      breakpoint: 980,
+			      settings: {
+			        autoplay: false,			  
+				  	slidesToShow: 2,
+				  	slidesToScroll: 1,
+				  	arrows: true,
+				  	infinite: true,
+			      }
+			    },
+			    {
+			      breakpoint: 840,
+			      settings: {
+			      	autoplay: true,
+			        slidesToShow: 2,
+			        slidesToScroll: 1,
+			        arrows: true,
+			  		infinite: true
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			      	autoplay: false,
+			        slidesToShow: 1,
+			        slidesToScroll: 1,
+			        arrows: true,
+			  		infinite: true
+			      }
+			    }	
+			  ]
+		});
+
+
+		var $window = $(window);
+    	var $slideContainer = $('#slideContainer');
+    	function checkWidth() {
+        	var windowsize = $window.width();
+        	if(windowsize <=1024) $slideContainer.addClass('small');        	
+        	else $slideContainer.removeClass('small');
+        }
+
+        checkWidth();
+        $(window).resize(checkWidth);
+
+
+
+
+	});	
+	</script>
+	{% include cta.html %}
+</body>
+</html>

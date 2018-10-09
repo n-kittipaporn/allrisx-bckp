@@ -1,0 +1,26 @@
+<!-- Highlights slide text-->
+		<section class="wrapper style1 wrapper-slide">
+			<div class="container slide-container small" id="slideContainer">
+				<div class="row">
+					<div class="12u">				
+						<div id="bxslider">
+							{%  for feat in site.data.navigation.feats %}
+							{%	assign heading = feat.text	%}
+							{%	assign href = feat.link | prepend: '/features/' %}
+							{%	assign icon = feat.icon %}
+							
+							<section class="4u">
+								<div class="box highlight slide-highlight narrower-remove-padding-left">
+									<a href="{{ href }}" target="_blank" style="text-decoration: none;border: none; cursor: pointer;"><i class="icon major {{ icon }}"></i></a>
+									<h3 class="slide-text">
+										<a href="{{ href }}" target="_blank">{{ heading }}</a>
+									</h3>															
+								</div>
+							</section>
+							
+							{% endfor %}
+						</div>		
+					</div>
+				</div>
+			</div>
+		</section>

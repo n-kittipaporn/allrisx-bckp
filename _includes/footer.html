@@ -1,0 +1,173 @@
+			<div id="footer">
+				<div class="container">
+					<div class="row ">
+						<div class="6u">
+							<section id="custom-narrow-footer-width">
+								<h3>More Information</h3>
+								<ul class="links">
+									{% assign current = page.url | downcase | split: '/' %}
+									<li {% if page.title == "about" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/about.html">About Us</a>
+									</li>
+									<li {% if page.title == "contact" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/contact.html">Contact</a>
+									</li>
+									<li {% if page.title == "Impressum" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/impressum.html">Impressum</a>
+									</li>
+									<li {% if page.title == "privacy" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/privacy.html">Privacy</a>
+									</li>
+									<li {% if page.title == "disclaimer" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/disclaimer.html">Disclaimer</a>
+									</li>
+									<li {% if page.title == "Status" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/status.html">Status</a>
+									</li>
+									<li {% if page.title == "term of use" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/term-of-use.html">Term of Use</a>
+									</li>
+									<li {% if page.title-url == "licenses" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/licenses.html">Licenses</a>
+									</li>
+								</ul>
+							</section>
+						</div>    
+						<section class="6u">
+							<h3>Get In Touch</h3>
+							<form action="https://getsimpleform.com/messages?form_api_token=3178db6845b1194ec45710657f17b5a6" method="POST" role="form" enctype="multipart/formdata" id="frmContact">
+								<input type="hidden" id="source" name="source" value="Message from AllRisx">
+								<input type='hidden' name='redirect_to' value='https://fantastic-breeze.cloudvent.net/thanks.html' />
+								<div class="row half collapse-at-2">
+									<div class="6u">
+										<input type="text" name="_from" id="_from" maxlength="30" required placeholder="Name" pattern="[a-zA-Z0-9]+"/>
+									</div>
+									<div class="6u">
+										<input type="email" name="_replyTo" id="_replyTo" placeholder="Email" maxlength="50" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+									</div>
+								</div>
+								<div class="row half">
+									<div class="12u">
+										<input type="text" id="_subject" name="_subject" maxlength="100" placeholder="Subject" required>
+									</div>
+								</div>
+								<div class="row half">
+									<div class="12u">
+										<textarea name="message" id="message" placeholder="Message" rows="5" maxlength="500" minlength="1" required></textarea>
+									</div>
+								</div>
+								<div class="row half">
+									<div class="12u">
+										<div class="g-recaptcha" data-callback="enableBtn" data-sitekey="6LdBoGMUAAAAAJ-5lI5-QQZ2js1eznRFK_NYCFR7" style="float:left; overflow-y: hidden;"></div>
+									</div>
+								</div>
+								<div class="row half">
+									<div class="12u">
+										<ul class="actions">
+											<li>
+												<input type="submit" class="button alt" value="Send Message" id="btnSubmitForm"/>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+
+				<!-- Icons -->				
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="#" class="icon fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
+					<li><a href="#" class="icon fa-youtube" target="_blank"><span class="label">Youtube</span></a></li>
+				</ul>
+				<!-- Copyright -->
+				<div class="copyright" style="text-align:center;margin-top: 2em;">
+					<ul class="menu">
+						<li>&copy;2018 AllRisX. All rights reserved</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+		<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="{{ site.baseurl }}/assets/js/jquery-3.1.1.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js" defer></script>
+		<script src="{{ site.baseurl }}/assets/js/skel.min.js" defer></script>
+		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js" defer></script>
+		<script src="{{ site.baseurl }}/assets/js/init.js" defer></script>
+
+		<script src="{{ site.baseurl }}/assets/js/fontawesome-all.js" defer></script>
+		<script src="https://www.google.com/recaptcha/api.js" defer async></script>
+    	{%  if page.title contains "Home" %}
+    		<script src="{{ site.baseurl }}/assets/js/slide/slick.js" defer></script>
+    	{% endif %}
+
+		<script type="text/javascript">
+		var enableBtn = function(response) {
+		    document.getElementById("btnSubmitForm").disabled = false;
+		};
+
+		$(document).ready(function(){
+			document.getElementById("btnSubmitForm").disabled = true;
+
+			{%  if page.title contains "Home" %}
+				$('div#bxslider').slick({
+					  autoplay: true,			  
+					  slidesToShow: 3,
+					  slidesToScroll: 1,
+					  arrows: true,
+					  infinite: true,
+					  adaptiveHeight: true,
+					  speed: 300,
+					  responsive: [	
+						{
+					      breakpoint: 1024,
+					      settings: {
+					        autoplay: true,			  
+						  	slidesToShow: 3,
+						  	slidesToScroll: 1,
+						  	arrows: true,
+						  	infinite: true,
+					      }
+					    },
+					    {
+					      breakpoint: 980,
+					      settings: {
+					        autoplay: true,			  
+						  	slidesToShow: 2,
+						  	slidesToScroll: 1,
+						  	arrows: true,
+						  	infinite: true,
+					      }
+					    },
+					    {
+					      breakpoint: 840,
+					      settings: {
+					      	autoplay: true,
+					        slidesToShow: 2,
+					        slidesToScroll: 1,
+					        arrows: true,
+					  		infinite: true
+					      }
+					    },
+					    {
+					      breakpoint: 480,
+					      settings: {
+					      	autoplay: true,
+					        slidesToShow: 1,
+					        slidesToScroll: 1,
+					        arrows: true,
+					  		infinite: true
+					      }
+					    }	
+					  ]
+				});
+
+	        {% endif %}
+		});	
+		</script>
+	</body>
+</html>

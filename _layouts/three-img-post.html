@@ -1,0 +1,43 @@
+{% include header.html %}
+{% include nav-breadcrumbs.html %}
+<!-- Main -->
+	<section class="wrapper style1 wrapper-content">
+		<div class="container">
+			
+
+			<!-- Blog -->
+				<section>
+					<header class="major no-bottom-padding">
+						<h2 class="content-title">{{ page.title }}</h2>
+						<p>{{ page.intro }}</p>
+					</header>
+					<div class="row">							
+						<div class="12u">
+							<section class="box" id="content-three-img-post1">							
+								{{ page.desc1 }}
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="-1u 10u">
+							<section class="box" id="content-three-img-post2">
+								<a href="#" class="image right"><img src="{{ site.baseurl }}{{ page.featured2 }}" alt="" /></a>
+								{{ page.desc2 }}
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="10u -1u">
+							<section class="box" id="content-three-img-post3">
+								<a href="#" class="image left"><img src="{{ site.baseurl }}{{ page.featured3 }}" alt="" /></a>
+								{{ page.desc3 }}
+							</section>
+						</div>
+					</div>
+				</section>
+
+			</div>		
+
+	
+	</section>
+{% include footer.html %}
